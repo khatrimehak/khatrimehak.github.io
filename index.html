@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahak | Digital Portfolio</title>
+    <!-- FontAwesome for beautiful icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --accent: #0d9488;
+            --accent-light: #ccfbf1;
+            --card-bg: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Header / Hero Section */
+        header {
+            text-align: center;
+            padding: 3rem 1rem;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: white;
+            border-radius: 16px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: #94a3b8;
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .contact-info a, .contact-info span {
+            color: #e2e8f0;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-info a:hover {
+            color: #2dd4bf;
+        }
+
+        /* Section Layouts */
+        h2 {
+            font-size: 1.8rem;
+            color: var(--accent);
+            border-bottom: 3px solid var(--accent-light);
+            padding-bottom: 0.5rem;
+            margin: 2.5rem 0 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            border-left: 4px solid var(--accent);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.25rem;
+            color: var(--text-main);
+        }
+
+        .card .timeline {
+            font-size: 0.85rem;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        .card ul {
+            list-style-type: none;
+        }
+
+        .card ul li {
+            position: relative;
+            padding-left: 1.25rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .card ul li::before {
+            content: "•";
+            color: var(--accent);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Skills Layout */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skills-box {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+        }
+
+        .skills-box h3 {
+            font-size: 1.1rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 0.25rem;
+        }
+
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tag {
+            background: var(--bg-color);
+            color: var(--text-main);
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            border: 1px solid #e2e8f0;
+        }
+
+        /* Languages & Co-curricular wrapper */
+        .flex-box {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .flex-child {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 4rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.2rem; }
+            .contact-info { flex-direction: column; align-items: center; gap: 0.75rem; }
+            .container { padding: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Hero Header -->
+        <header>
+            <h1>Mahak</h1>
+            <p>Educator & Content Developer</p>
+            <div class="contact-info">
+                <span><i class="fa-solid fa-location-dot"></i> Kharkhoda, Haryana</span>
+                <a href="tel:+918708119965"><i class="fa-solid fa-phone"></i> +91-8708119965</a>
+                <a href="mailto:mehakkhatri097@gmail.com"><i class="fa-solid fa-envelope"></i> mehakkhatri097@gmail.com</a>
+                <a href="https://linkedin.com/in/mehak-khatri-96" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </header>
+
+        <!-- About Me Section -->
+        <h2><i class="fa-solid fa-user"></i> Professional Summary</h2>
+        <p style="color: var(--text-muted); font-size: 1.05rem; background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+            Passionate and driven educator pursuing an integrated Bachelor of Arts & Education. Equipped with extensive hands-on training in classroom management, interactive curriculum delivery, and digital instructional tools. Dedicated to creating an inclusive, highly collaborative environment that nurtures student development, critical thinking, and holistic academic progress.
+        </p>
+
+        <!-- Internships / Work Experience -->
+        <h2><i class="fa-solid fa-briefcase"></i> Internships</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Intern @ Lawrence International School</h3>
+                <div class="timeline">May 2026 | Jalandhar</div>
+                <ul>
+                    <li>Planned, prepared, and delivered curriculum-aligned lesson plans using interactive teaching methodologies to boost student engagement.</li>
+                    <li>Organized dynamic classroom activities, group discussions, and educational games to enhance participation.</li>
+                    <li>Offered personalized mentoring, individual support, and doubt-clearing sessions to build robust learning outcomes.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Intern @ Divine Public School</h3>
+                <div class="timeline">May 2025 | Phagwara</div>
+                <ul>
+                    <li>Managed daily classroom dynamics while cultivating a safe, disciplined, and positive environment for students' growth.</li>
+                    <li>Conducted detailed student assessments, evaluated projects, and provided timely actionable feedback.</li>
+                    <li>Supported school administration, collaborated with core faculty, and actively participated in parent-teacher interactions.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <h2><i class="fa-solid fa-lightbulb"></i> Social Responsibility Projects</h2>
+        <div class="grid">
+            <div class="card" style="border-left-color: #2563eb;">
+                <h3>Community Development Project (CDP)</h3>
+                <div class="timeline">Jun 2025 | Sathi Foundation</div>
+                <ul>
+                    <li>Volunteered as a community teacher, facilitating lessons covering core academic subjects and core life skills.</li>
+                    <li>Designed and coordinated interactive learning programs to boost community student participation.</li>
+                    <li>Collaborated closely with volunteer networks to run community learning sessions, strengthening professional leadership and teamwork capacities.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <h2><i class="fa-solid fa-gears"></i> Core Skills</h2>
+        <div class="skills-container">
+            <div class="skills-box">
+                <h3>Teaching & Pedagogy</h3>
+                <div class="tag-container">
+                    <span class="tag">Lesson Planning</span>
+                    <span class="tag">Classroom Management</span>
+                    <span class="tag">Student Assessment</span>
+                    <span class="tag">Curriculum Delivery</span>
+                </div>
+            </div>
+            <div class="skills-box">
+                <h3>ICT & Digital Literacy</h3>
+                <div class="tag-container">
+                    <span class="tag">Smart Board</span>
+                    <span class="tag">Projector Methods</span>
+                    <span class="tag">Google Workspace</span>
+                    <span class="tag">MS Office Suite</span>
+                </div>
+            </div>
+            <div class="skills-box">
+                <h3>Research & Design</h3>
+                <div class="tag-container">
+                    <span class="tag">Educational Research</span>
+                    <span class="tag">Content Development</span>
+                    <span class="tag">Literature Review</span>
+                    <span class="tag">Presentation Design</span>
+                </div>
+            </div>
+            <div class="skills-box">
+                <h3>Power Skills</h3>
+                <div class="tag-container">
+                    <span class="tag">Critical Thinking</span>
+                    <span class="tag">Communication</span>
+                    <span class="tag">Team Collaboration</span>
+                    <span class="tag">Leadership</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education & Certifications Side by Side -->
+        <div class="flex-box">
+            <div class="flex-child">
+                <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+                <div class="grid" style="grid-template-columns: 1fr;">
+                    <div class="card">
+                        <h3>Lovely Professional University</h3>
+                        <div class="timeline">Aug 2023 – Present | Punjab</div>
+                        <p style="font-size:0.95rem; color:var(--text-muted)">Bachelor of Arts & Education (B.A. B.Ed.)<br><strong>CGPA: 7.7</strong></p>
+                    </div>
+                    <div class="card">
+                        <h3>Sanjay Kuldeep Sen. Sec. School</h3>
+                        <div class="timeline">Jul 2020 – Apr 2022 | Sonipat, Haryana</div>
+                        <p style="font-size:0.95rem; color:var(--text-muted)">Class XII Board Evaluation<br><strong>Percentage: 62%</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-child">
+                <h2><i class="fa-solid fa-certificate"></i> Certifications</h2>
+                <div class="grid" style="grid-template-columns: 1fr;">
+                    <div class="card" style="border-left-color: #65a30d;">
+                        <h3>Professional Development</h3>
+                        <ul style="padding-left:0;">
+                            <li>English Language for Competitive Exams (LPU, 2025)</li>
+                            <li>Critical Understanding of Educational Technology (LPU, 2023)</li>
+                            <li>Archaeology and Epigraphy (LPU, 2024)</li>
+                            <li>Excavation, Cultural Heritage & Digital Archaeology (LPU, 2024)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Co-curricular activities & Languages -->
+        <div class="flex-box">
+            <div class="flex-child">
+                <h2><i class="fa-solid fa-campground"></i> Field Exposure</h2>
+                <div class="card" style="border-left-color: #eab308;">
+                    <ul>
+                        <li><strong>Udaan Special School (2025):</strong> Explored inclusive learning structures and pedagogical tools tailored for exceptional learners.</li>
+                        <li><strong>Pushpa Gujral Science City (2025):</strong> Analyzed hands-on scientific models, robotics setups, and alternative green energy.</li>
+                        <li><strong>Jang-e-Azadi Memorial (2025):</strong> Reviewed visual exhibits capturing historical details of India’s independence movement.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-child">
+                <h2><i class="fa-solid fa-language"></i> Languages</h2>
+                <div class="card" style="border-left-color: #a855f7;">
+                    <div class="tag-container" style="margin-top: 0.5rem;">
+                        <span class="tag" style="background:var(--accent-light); font-weight:600;">English</span>
+                        <span class="tag" style="background:var(--accent-light); font-weight:600;">Hindi</span>
+                        <span class="tag" style="background:var(--accent-light); font-weight:600;">Haryanvi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Mahak. Generated as a Live Digital Portfolio.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
