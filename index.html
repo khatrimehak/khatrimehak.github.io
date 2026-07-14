@@ -37,7 +37,6 @@
             overflow-x: hidden;
         }
 
-        /* Ambient glow background elements */
         body::before {
             content: '';
             position: absolute;
@@ -66,7 +65,6 @@
             padding: 2.5rem 1.5rem;
         }
 
-        /* Hero Showcase Split Layout */
         .hero-section {
             display: grid;
             grid-template-columns: 1.2fr 0.8fr;
@@ -106,7 +104,6 @@
             margin-bottom: 2rem;
         }
 
-        /* Morphing Profile Container */
         .profile-container {
             position: relative;
             display: flex;
@@ -141,7 +138,6 @@
             100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
         }
 
-        /* Contact Pill Matrix */
         .contact-pill-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -173,7 +169,6 @@
             color: var(--accent-cyan);
         }
 
-        /* Section Headings */
         h2 {
             font-size: 1.75rem;
             font-weight: 700;
@@ -190,7 +185,6 @@
             -webkit-text-fill-color: transparent;
         }
 
-        /* Glass Cards */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -262,7 +256,70 @@
             font-weight: bold;
         }
 
-        /* Modern Skills Matrix */
+        /* Certificate Dynamic Grid Styling */
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .cert-card {
+            background: rgba(15, 23, 42, 0.4);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cert-card:hover {
+            transform: scale(1.03);
+            border-color: var(--accent-cyan);
+            box-shadow: 0 12px 24px rgba(6, 182, 212, 0.15);
+        }
+
+        .cert-img-container {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            overflow: hidden;
+            background: #111827;
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .cert-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .cert-card:hover .cert-img-container img {
+            transform: scale(1.05);
+        }
+
+        .cert-info {
+            padding: 1.25rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .cert-info h4 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 0.4rem;
+            line-height: 1.4;
+        }
+
+        .cert-info p {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -306,14 +363,12 @@
             border-color: var(--accent-cyan);
         }
 
-        /* Two-Column Flex Grid Layout */
         .flex-box {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
             gap: 2rem;
         }
 
-        /* Photo Gallery Area Styling */
         .gallery-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -376,29 +431,27 @@
                 <h1>Mahak</h1>
                 <div class="subtitle">Educator & Educational Researcher</div>
                 <p class="summary">
-                    Dedicated and collaborative educator completing an integrated Bachelor of Arts & Education at Lovely Professional University[cite: 2]. Passionate about combining classroom dynamics, interactive curriculum delivery, and digital-age instructional systems to elevate teaching quality[cite: 2].
+                    Dedicated and collaborative educator completing an integrated Bachelor of Arts & Education at Lovely Professional University. Passionate about combining classroom dynamics, interactive curriculum delivery, and digital-age instructional systems to elevate teaching quality.
                 </p>
                 
                 <div class="contact-pill-grid">
                     <a href="mailto:mehakkhatri097@gmail.com" class="contact-pill">
-                        <i class="fa-solid fa-envelope"></i> mehakkhatri097@gmail.com[cite: 2]
+                        <i class="fa-solid fa-envelope"></i> mehakkhatri097@gmail.com
                     </a>
                     <a href="tel:+918708119965" class="contact-pill">
-                        <i class="fa-solid fa-phone"></i> +91-8708119965[cite: 2]
+                        <i class="fa-solid fa-phone"></i> +91-8708119965
                     </a>
                     <a href="https://linkedin.com/in/mehak-khatri-96" target="_blank" class="contact-pill">
-                        <i class="fa-brands fa-linkedin"></i> LinkedIn Profile[cite: 2]
+                        <i class="fa-brands fa-linkedin"></i> LinkedIn Profile
                     </a>
                     <span class="contact-pill">
-                        <i class="fa-solid fa-location-dot"></i> Sonipat, Haryana[cite: 2]
+                        <i class="fa-solid fa-location-dot"></i> Sonipat, Haryana
                     </span>
                 </div>
             </div>
 
-            <!-- Morphing Profile Picture -->
             <div class="profile-container">
                 <div class="profile-frame">
-                    <!-- TIP: Save your profile image inside your GitHub repo as profile.jpg -->
                     <img src="profile.jpg" alt="Mahak Profile Photo" class="profile-pic">
                 </div>
             </div>
@@ -409,21 +462,21 @@
         <div class="grid">
             <div class="card">
                 <h3>Intern | Lawrence International School</h3>
-                <div class="timeline">May 2026 — Jalandhar[cite: 2]</div>
+                <div class="timeline">May 2026 — Jalandhar</div>
                 <ul>
-                    <li>Planned, prepared, and delivered curriculum-aligned lesson plans using interactive teaching methods to enhance student understanding and classroom participation[cite: 2].</li>
-                    <li>Organized interactive classroom activities, group discussions, and educational games to enhance student participation and understanding[cite: 2].</li>
-                    <li>Supported students through individual mentoring, doubt-clearing sessions, and personalized academic guidance to strengthen learning outcomes[cite: 2].</li>
+                    <li>Planned, prepared, and delivered curriculum-aligned lesson plans using interactive teaching methods to enhance student understanding and classroom participation.</li>
+                    <li>Organized interactive classroom activities, group discussions, and educational games to enhance student participation and understanding.</li>
+                    <li>Supported students through individual mentoring, doubt-clearing sessions, and personalized academic guidance to strengthen learning outcomes.</li>
                 </ul>
             </div>
             <div class="card">
                 <h3>Intern | Divine Public School</h3>
-                <div class="timeline">May 2025 — Phagwara[cite: 2]</div>
+                <div class="timeline">May 2025 — Phagwara</div>
                 <ul>
-                    <li>Managed classroom activities and maintained a positive, inclusive, and disciplined learning environment to support students' academic and personal development[cite: 2].</li>
-                    <li>Conducted student assessments, evaluated assignments, monitored academic progress, and provided timely feedback to improve learning outcomes[cite: 2].</li>
-                    <li>Assisted with classroom observation, school administration, and day-to-day academic activities while collaborating with teachers to ensure effective classroom management[cite: 2].</li>
-                    <li>Participated in school events, cultural programs, extracurricular activities, and parent–teacher interactions to promote student engagement and holistic development[cite: 2].</li>
+                    <li>Managed classroom activities and maintained a positive, inclusive, and disciplined learning environment to support students' academic and personal development.</li>
+                    <li>Conducted student assessments, evaluated assignments, monitored academic progress, and provided timely feedback to improve learning outcomes.</li>
+                    <li>Assisted with classroom observation, school administration, and day-to-day academic activities while collaborating with teachers to ensure effective classroom management.</li>
+                    <li>Participated in school events, cultural programs, extracurricular activities, and parent–teacher interactions to promote student engagement and holistic development.</li>
                 </ul>
             </div>
         </div>
@@ -433,30 +486,113 @@
         <div class="grid">
             <div class="card" style="border-left-color: #06b6d4;">
                 <h3>A Comparative Study of Teacher–Student Relationships and Students' Lifestyle in the Gurukul System and Modern Education</h3>
-                <div class="timeline">May 2026 | LPU Publication[cite: 2]</div>
+                <div class="timeline">May 2026 | LPU Publication</div>
                 <p style="color: var(--text-secondary); font-size: 0.95rem;">
-                    Conducted a comparative framework review comparing educational values, mentorship setups, and student lifecycle dynamics across historical and contemporary institutions[cite: 2].
+                    Conducted a comparative framework review comparing educational values, mentorship setups, and student lifecycle dynamics across historical and contemporary institutions.
                 </p>
             </div>
             <div class="card" style="border-left-color: #06b6d4;">
                 <h3>NEP 2020 and Pedagogical Implications: Educational implications and challenges</h3>
-                <div class="timeline">March 2025 | LPU Publication[cite: 2]</div>
+                <div class="timeline">March 2025 | LPU Publication</div>
                 <p style="color: var(--text-secondary); font-size: 0.95rem;">
-                    Analyzed the practical classroom implementation strategies, paradigm changes, and operational barriers presented by the New Education Policy 2020 frameworks[cite: 2].
+                    Analyzed the practical classroom implementation strategies, paradigm changes, and operational barriers presented by the New Education Policy 2020 frameworks.
                 </p>
             </div>
         </div>
 
-        <!-- Social Responsibility Project -->
-        <h2><i class="fa-solid fa-hand-holding-heart"></i> Projects</h2>
-        <div class="card" style="margin-bottom: 2rem;">
-            <h3>Community Development Project (CDP) – Sathi Foundation</h3>
-            <div class="timeline">June 2025[cite: 2]</div>
-            <ul style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
-                <li>Conducted educational support sessions for underprivileged students through interactive and learner-centered activities, contributing to their academic growth[cite: 2].</li>
-                <li>Built meaningful relationships with students and their parents by providing guidance, creating awareness, and encouraging active participation in education[cite: 2].</li>
-                <li>Gained practical experience in community service by supporting students' overall development while strengthening communication, empathy, and leadership skills[cite: 2].</li>
-            </ul>
+        <!-- Community Development Projects (Saathi Foundation) -->
+        <h2><i class="fa-solid fa-hand-holding-heart"></i> Community Projects (Saathi Foundation)</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Project "Aparajita" | Intern</h3>
+                <div class="timeline">June 20, 2024 — July 6, 2024</div>
+                <ul>
+                    <li>Focused on <strong>EDU 436 - SDG-05 (Gender Equality)</strong> initiatives in Bholapur, Jhbaewala, Punjab.</li>
+                    <li>Conducted community outreach sessions encouraging critical dialogue around equity and active leadership.</li>
+                    <li>Fostered meaningful collaborative relations with local children and residents to champion quality advocacy programs.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Project "Learn To Earn" | Intern</h3>
+                <div class="timeline">June 1, 2024 — June 18, 2024</div>
+                <ul>
+                    <li>Addressed educational gaps through <strong>EDU 426 - SDG-01 (No Poverty)</strong> and <strong>SDG-04 (Quality Education)</strong>.</li>
+                    <li>Taught skill-focused and learner-centered academic modules to empower underprivileged students.</li>
+                    <li>Applied adaptive, enthusiastic mentorship methodologies recognized for developing practical student capabilities.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- NEW VISUAL CREDENTIALS SHOWCASE SECTION -->
+        <h2><i class="fa-solid fa-file-signature"></i> Verified Digital Credentials</h2>
+        <div class="cert-grid">
+            
+            <!-- Certificate 1 -->
+            <div class="cert-card">
+                <div class="cert-img-container">
+                    <img src="cert_saathi_aparajita.jpg" alt="Saathi Foundation Aparajita Certificate">
+                </div>
+                <div class="cert-info">
+                    <h4>Project "Aparajita" Internship</h4>
+                    <p>Saathi Foundation • July 2024</p>
+                </div>
+            </div>
+
+            <!-- Certificate 2 -->
+            <div class="cert-card">
+                <div class="cert-img-container">
+                    <img src="cert_saathi_learn.jpg" alt="Saathi Foundation Learn to Earn Certificate">
+                </div>
+                <div class="cert-info">
+                    <h4>Project "Learn To Earn" Internship</h4>
+                    <p>Saathi Foundation • July 2024</p>
+                </div>
+            </div>
+
+            <!-- Certificate 3 -->
+            <div class="cert-card">
+                <div class="cert-img-container">
+                    <img src="cert_nptel.jpg" alt="NPTEL English Certificate">
+                </div>
+                <div class="cert-info">
+                    <h4>English Language for Competitive Exams</h4>
+                    <p>NPTEL Elite • April 2025</p>
+                </div>
+            </div>
+
+            <!-- Certificate 4 -->
+            <div class="cert-card">
+                <div class="cert-img-container">
+                    <img src="cert_henry_harvin.jpg" alt="Henry Harvin Instructional Design Card">
+                </div>
+                <div class="cert-info">
+                    <h4>Instructional Design Gold Membership</h4>
+                    <p>Henry Harvin Education • Valid 2026</p>
+                </div>
+            </div>
+
+            <!-- Certificate 5 -->
+            <div class="cert-card">
+                <div class="cert-img-container">
+                    <img src="cert_mooc_tech.jpg" alt="MOOC Educational Technology Certificate">
+                </div>
+                <div class="cert-info">
+                    <h4>Educational Technology MOOC Course</h4>
+                    <p>Kannur Salafi & Panjab University • Feb 2024</p>
+                </div>
+            </div>
+
+            <!-- Certificate 6 -->
+            <div class="cert-card">
+                <div class="cert-img-container">
+                    <img src="cert_mygov_quiz.jpg" alt="MyGov Constitution Quiz Certificate">
+                </div>
+                <div class="cert-info">
+                    <h4>Hamara Samvidhan Quiz</h4>
+                    <p>Ministry of Parliamentary Affairs • 2024</p>
+                </div>
+            </div>
+
         </div>
 
         <!-- Core Matrix Capabilities -->
@@ -465,39 +601,39 @@
             <div class="skills-box">
                 <h3>Teaching Skills</h3>
                 <div class="tag-container">
-                    <span class="tag">Lesson Planning[cite: 2]</span>
-                    <span class="tag">Classroom Management[cite: 2]</span>
-                    <span class="tag">Student Assessment[cite: 2]</span>
-                    <span class="tag">Curriculum Delivery[cite: 2]</span>
+                    <span class="tag">Lesson Planning</span>
+                    <span class="tag">Classroom Management</span>
+                    <span class="tag">Student Assessment</span>
+                    <span class="tag">Curriculum Delivery</span>
                 </div>
             </div>
             <div class="skills-box">
                 <h3>ICT & Digital Skills</h3>
                 <div class="tag-container">
-                    <span class="tag">Smart Board[cite: 2]</span>
-                    <span class="tag">Projector-Based Teaching[cite: 2]</span>
-                    <span class="tag">Digital Learning Tools[cite: 2]</span>
-                    <span class="tag">Google Suite[cite: 2]</span>
-                    <span class="tag">MS Office[cite: 2]</span>
+                    <span class="tag">Smart Board</span>
+                    <span class="tag">Projector-Based Teaching</span>
+                    <span class="tag">Digital Learning Tools</span>
+                    <span class="tag">Google Suite</span>
+                    <span class="tag">MS Office</span>
                 </div>
             </div>
             <div class="skills-box">
                 <h3>Research Skills</h3>
                 <div class="tag-container">
-                    <span class="tag">Educational Research[cite: 2]</span>
-                    <span class="tag">Content Development[cite: 2]</span>
-                    <span class="tag">Literature Review[cite: 2]</span>
-                    <span class="tag">Presentation Design[cite: 2]</span>
+                    <span class="tag">Educational Research</span>
+                    <span class="tag">Content Development</span>
+                    <span class="tag">Literature Review</span>
+                    <span class="tag">Presentation Design</span>
                 </div>
             </div>
             <div class="skills-box">
                 <h3>Soft Skills</h3>
                 <div class="tag-container">
-                    <span class="tag">Critical Thinking[cite: 2]</span>
-                    <span class="tag">Communication Skills[cite: 2]</span>
-                    <span class="tag">Time Management[cite: 2]</span>
-                    <span class="tag">Team Collaboration[cite: 2]</span>
-                    <span class="tag">Leadership[cite: 2]</span>
+                    <span class="tag">Critical Thinking</span>
+                    <span class="tag">Communication Skills</span>
+                    <span class="tag">Time Management</span>
+                    <span class="tag">Team Collaboration</span>
+                    <span class="tag">Leadership</span>
                 </div>
             </div>
         </div>
@@ -508,29 +644,43 @@
                 <h2><i class="fa-solid fa-graduation-cap"></i> Academic Pathway</h2>
                 <div class="card" style="margin-bottom: 1rem;">
                     <h3>Lovely Professional University</h3>
-                    <div class="timeline">Aug 2023 — Present | Phagwara, Punjab[cite: 2]</div>
+                    <div class="timeline">Aug 2023 — Present | Phagwara, Punjab</div>
                     <p style="color: var(--text-secondary);">
                         Bachelor of Arts & Education (B.A. B.Ed.)<br>
-                        <strong style="color: var(--accent-cyan)">CGPA: 7.7</strong>[cite: 2]
+                        <strong style="color: var(--accent-cyan)">CGPA: 7.7</strong>
                     </p>
                 </div>
                 <div class="card">
                     <h3>Secondary School Foundations</h3>
                     <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.5rem;">
-                        <strong>Class XII:</strong> 62% | Sanjay Kuldeep Sen. Sec School (Sonipat, Haryana)[cite: 2]<br>
-                        <strong>Class X:</strong> 56% | Brightways International School (Sonipat, Haryana)[cite: 2]
+                        <strong>Class XII:</strong> 62% | Sanjay Kuldeep Sen. Sec School (Sonipat, Haryana)<br>
+                        <strong>Class X:</strong> 56% | Brightways International School (Sonipat, Haryana)
                     </p>
                 </div>
             </div>
 
             <div>
-                <h2><i class="fa-solid fa-award"></i> Certifications</h2>
+                <h2><i class="fa-solid fa-award"></i> Certifications List</h2>
                 <div class="card" style="height: calc(100% - 4.5rem);">
                     <ul style="padding-top: 0.5rem;">
-                        <li style="margin-bottom: 1.2rem;"><strong>English Language for Competitive Exams</strong> — NPTEL (Apr 2025)[cite: 2]</li>
-                        <li style="margin-bottom: 1.2rem;"><strong>Critical Understanding of Educational Technology</strong> — EDUTECH (Aug 2023)[cite: 2]</li>
-                        <li style="margin-bottom: 1.2rem;"><strong>Archaeology and Epigraphy</strong> — LPU (Apr 2024)[cite: 2]</li>
-                        <li><strong>Excavation, Cultural Heritage & Digital Archaeology</strong> — LPU (Feb 2024)[cite: 2]</li>
+                        <li style="margin-bottom: 1.2rem;">
+                            <strong>Instructional Design (Gold Member)</strong> — Henry Harvin Education (Valid till Sep 2026)
+                        </li>
+                        <li style="margin-bottom: 1.2rem;">
+                            <strong>English Language for Competitive Exams (64%)</strong> — NPTEL (Elite Certificate, Jan-Apr 2025)
+                        </li>
+                        <li style="margin-bottom: 1.2rem;">
+                            <strong>Critical Understanding of Educational Technology (Grade A)</strong> — MOOC Joint Program (Feb 2024)
+                        </li>
+                        <li style="margin-bottom: 1.2rem;">
+                            <strong>Hamara Samvidhan - Hamara Swabhiman Quiz</strong> — Ministry of Parliamentary Affairs & MyGov (Participation)
+                        </li>
+                        <li style="margin-bottom: 1.2rem;">
+                            <strong>Archaeology and Epigraphy</strong> — LPU (Apr 2024)
+                        </li>
+                        <li>
+                            <strong>Excavation, Cultural Heritage & Digital Archaeology</strong> — LPU (Feb 2024)
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -542,33 +692,29 @@
                 <h2><i class="fa-solid fa-route"></i> Immersive Field Exposure</h2>
                 <div class="card" style="height: calc(100% - 4.5rem);">
                     <ul>
-                        <li><strong>Udaan Special School (Mar 2025):</strong> Completed an educational field visit, observing inclusive teaching practices, classroom management strategies, and methods for supporting learners with special needs[cite: 2].</li>
-                        <li><strong>Pushpa Gujral Science City (Apr 2025):</strong> Visited to gain practical exposure to scientific concepts through interactive exhibits, robotics, renewable energy systems, and hands-on learning activities[cite: 2].</li>
-                        <li><strong>Jang-e-Azadi Memorial (May 2025):</strong> Participated in an educational visit to explore India's freedom struggle, cultural heritage, and historical exhibits[cite: 2].</li>
+                        <li><strong>Udaan Special School (Mar 2025):</strong> Completed an educational field visit, observing inclusive teaching practices, classroom management strategies, and methods for supporting learners with special needs.</li>
+                        <li><strong>Pushpa Gujral Science City (Apr 2025):</strong> Visited to gain practical exposure to scientific concepts through interactive exhibits, robotics, renewable energy systems, and hands-on learning activities.</li>
+                        <li><strong>Jang-e-Azadi Memorial (May 2025):</strong> Participated in an educational visit to explore India's freedom struggle, cultural heritage, and historical exhibits.</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Photo Gallery Section -->
             <div>
                 <h2><i class="fa-solid fa-images"></i> Field & Photo Gallery</h2>
                 <div class="gallery-grid">
                     <div class="gallery-item">
-                        <!-- Put your image in your GitHub repo as gallery1.jpg -->
                         <img src="gallery1.jpg" alt="Field Study Visit">
-                        <div class="gallery-overlay">Udaan Special School Field Study[cite: 2]</div>
+                        <div class="gallery-overlay">Udaan Special School Field Study</div>
                     </div>
                     <div class="gallery-item">
-                        <!-- Put your image in your GitHub repo as gallery2.jpg -->
                         <img src="gallery2.jpg" alt="Science City Visit">
-                        <div class="gallery-overlay">Science City Educational Exploration[cite: 2]</div>
+                        <div class="gallery-overlay">Science City Educational Exploration</div>
                     </div>
                 </div>
                 
-                <!-- Native Languages -->
                 <div class="tag-container" style="margin-top: 1.5rem; justify-content: center;">
-                    <span class="tag" style="background: rgba(13, 148, 136, 0.2); border-color: var(--accent-teal)">English[cite: 2]</span>
-                    <span class="tag" style="background: rgba(13, 148, 136, 0.2); border-color: var(--accent-teal)">Hindi[cite: 2]</span>
+                    <span class="tag" style="background: rgba(13, 148, 136, 0.2); border-color: var(--accent-teal)">English</span>
+                    <span class="tag" style="background: rgba(13, 148, 136, 0.2); border-color: var(--accent-teal)">Hindi</span>
                 </div>
             </div>
         </div>
