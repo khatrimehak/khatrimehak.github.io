@@ -37,7 +37,7 @@
             overflow-x: hidden;
         }
 
-        /* Subtle ambient glow elements in background */
+        /* Ambient glow background elements */
         body::before {
             content: '';
             position: absolute;
@@ -66,7 +66,7 @@
             padding: 2.5rem 1.5rem;
         }
 
-        /* Hero / Profile Showcase Split Layout */
+        /* Hero Showcase Split Layout */
         .hero-section {
             display: grid;
             grid-template-columns: 1.2fr 0.8fr;
@@ -106,7 +106,7 @@
             margin-bottom: 2rem;
         }
 
-        /* Mesmerizing Profile Frame */
+        /* Morphing Profile Container */
         .profile-container {
             position: relative;
             display: flex;
@@ -141,7 +141,7 @@
             100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
         }
 
-        /* Modern Quick Contact Grid */
+        /* Contact Pill Matrix */
         .contact-pill-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -173,7 +173,7 @@
             color: var(--accent-cyan);
         }
 
-        /* Section Title Styling */
+        /* Section Headings */
         h2 {
             font-size: 1.75rem;
             font-weight: 700;
@@ -190,7 +190,7 @@
             -webkit-text-fill-color: transparent;
         }
 
-        /* Glass Cards Grid */
+        /* Glass Cards */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -262,10 +262,10 @@
             font-weight: bold;
         }
 
-        /* Modern Skills Matrix Grid */
+        /* Modern Skills Matrix */
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 1.5rem;
         }
 
@@ -313,7 +313,7 @@
             gap: 2rem;
         }
 
-        /* Photo Gallery Area Layout styling */
+        /* Photo Gallery Area Styling */
         .gallery-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -358,7 +358,6 @@
             border-top: 1px solid var(--glass-border);
         }
 
-        /* Responsive Design */
         @media (max-width: 900px) {
             .hero-section { grid-template-columns: 1fr; padding: 2rem; text-align: center; gap: 2rem; }
             .hero-text h1 { font-size: 2.5rem; }
@@ -371,72 +370,92 @@
 
     <div class="container">
         
-        <!-- Hero & Profile Display Section -->
+        <!-- Hero Section -->
         <section class="hero-section">
             <div class="hero-text">
                 <h1>Mahak</h1>
-                <div class="subtitle">Educator & Research Innovator</div>
+                <div class="subtitle">Educator & Educational Researcher</div>
                 <p class="summary">
-                   [cite: 1] Dedicated and collaborative educator completing an integrated Bachelor of Arts & Education.[cite: 1] Expertly combining comprehensive curriculum design and interactive modern pedagogies with digital-age learning systems to elevate classroom engagement and long-term student development.[cite: 1]
+                    Dedicated and collaborative educator completing an integrated Bachelor of Arts & Education at Lovely Professional University[cite: 2]. Passionate about combining classroom dynamics, interactive curriculum delivery, and digital-age instructional systems to elevate teaching quality[cite: 2].
                 </p>
                 
                 <div class="contact-pill-grid">
                     <a href="mailto:mehakkhatri097@gmail.com" class="contact-pill">
-                        <i class="fa-solid fa-envelope"></i> mehakkhatri097@gmail.com[cite: 1]
+                        <i class="fa-solid fa-envelope"></i> mehakkhatri097@gmail.com[cite: 2]
                     </a>
                     <a href="tel:+918708119965" class="contact-pill">
-                        <i class="fa-solid fa-phone"></i> +91-8708119965[cite: 1]
+                        <i class="fa-solid fa-phone"></i> +91-8708119965[cite: 2]
                     </a>
                     <a href="https://linkedin.com/in/mehak-khatri-96" target="_blank" class="contact-pill">
-                        <i class="fa-brands fa-linkedin"></i> LinkedIn Profile[cite: 1]
+                        <i class="fa-brands fa-linkedin"></i> LinkedIn Profile[cite: 2]
                     </a>
                     <span class="contact-pill">
-                        <i class="fa-solid fa-location-dot"></i> Kharkhoda, Haryana[cite: 1]
+                        <i class="fa-solid fa-location-dot"></i> Sonipat, Haryana[cite: 2]
                     </span>
                 </div>
             </div>
 
-            <!-- Morphing Profile Picture Container -->
+            <!-- Morphing Profile Picture -->
             <div class="profile-container">
                 <div class="profile-frame">
-                    <!-- TIP: Replace 'profile.jpg' with your actual image path or direct URL -->
-                    <img src="profile.jpg" alt="Mahak Photo" class="profile-pic">
+                    <!-- TIP: Save your profile image inside your GitHub repo as profile.jpg -->
+                    <img src="profile.jpg" alt="Mahak Profile Photo" class="profile-pic">
                 </div>
             </div>
         </section>
 
-        <!-- Experience Timeline Section -->
-        <h2><i class="fa-solid fa-briefcase"></i> Professional Internship Internships</h2>
+        <!-- Internship Experience -->
+        <h2><i class="fa-solid fa-briefcase"></i> Internships</h2>
         <div class="grid">
             <div class="card">
                 <h3>Intern | Lawrence International School</h3>
-                <div class="timeline">May 2026 — Jalandhar[cite: 1]</div>
+                <div class="timeline">May 2026 — Jalandhar[cite: 2]</div>
                 <ul>
-                    <li>Planned, prepared, and seamlessly deployed interactive, curriculum-aligned lessons designed to amplify engagement.[cite: 1]</li>
-                    <li>Orchestrated group debates, educational games, and collaborative class sessions.[cite: 1]</li>
-                    <li>Delivered personalized mentoring structures and focused doubt-clearing plans to bolster individual learning milestones.[cite: 1]</li>
+                    <li>Planned, prepared, and delivered curriculum-aligned lesson plans using interactive teaching methods to enhance student understanding and classroom participation[cite: 2].</li>
+                    <li>Organized interactive classroom activities, group discussions, and educational games to enhance student participation and understanding[cite: 2].</li>
+                    <li>Supported students through individual mentoring, doubt-clearing sessions, and personalized academic guidance to strengthen learning outcomes[cite: 2].</li>
                 </ul>
             </div>
             <div class="card">
                 <h3>Intern | Divine Public School</h3>
-                <div class="timeline">May 2025 — Phagwara[cite: 1]</div>
+                <div class="timeline">May 2025 — Phagwara[cite: 2]</div>
                 <ul>
-                    <li>Maintained balanced, safe, inclusive, and disciplined instructional classroom environments.[cite: 1]</li>
-                    <li>Executed granular student testing protocols, managed essay assessments, and provided targeted structural feedback.[cite: 1]</li>
-                    <li>Collaborated on school governance activities, daily course plans, and critical parent-teacher communication portals.[cite: 1]</li>
+                    <li>Managed classroom activities and maintained a positive, inclusive, and disciplined learning environment to support students' academic and personal development[cite: 2].</li>
+                    <li>Conducted student assessments, evaluated assignments, monitored academic progress, and provided timely feedback to improve learning outcomes[cite: 2].</li>
+                    <li>Assisted with classroom observation, school administration, and day-to-day academic activities while collaborating with teachers to ensure effective classroom management[cite: 2].</li>
+                    <li>Participated in school events, cultural programs, extracurricular activities, and parent–teacher interactions to promote student engagement and holistic development[cite: 2].</li>
                 </ul>
             </div>
         </div>
 
-        <!-- Social Framework Project Section -->
-        <h2><i class="fa-solid fa-hand-holding-heart"></i> Social & Community Leadership</h2>
+        <!-- Research & Publications Section -->
+        <h2><i class="fa-solid fa-book-open"></i> Research & Publications</h2>
+        <div class="grid">
+            <div class="card" style="border-left-color: #06b6d4;">
+                <h3>A Comparative Study of Teacher–Student Relationships and Students' Lifestyle in the Gurukul System and Modern Education</h3>
+                <div class="timeline">May 2026 | LPU Publication[cite: 2]</div>
+                <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                    Conducted a comparative framework review comparing educational values, mentorship setups, and student lifecycle dynamics across historical and contemporary institutions[cite: 2].
+                </p>
+            </div>
+            <div class="card" style="border-left-color: #06b6d4;">
+                <h3>NEP 2020 and Pedagogical Implications: Educational implications and challenges</h3>
+                <div class="timeline">March 2025 | LPU Publication[cite: 2]</div>
+                <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                    Analyzed the practical classroom implementation strategies, paradigm changes, and operational barriers presented by the New Education Policy 2020 frameworks[cite: 2].
+                </p>
+            </div>
+        </div>
+
+        <!-- Social Responsibility Project -->
+        <h2><i class="fa-solid fa-hand-holding-heart"></i> Projects</h2>
         <div class="card" style="margin-bottom: 2rem;">
-            <h3>Community Development Project (CDP) — Sathi Foundation</h3>
-            <div class="timeline">June 2025[cite: 1]</div>
+            <h3>Community Development Project (CDP) – Sathi Foundation</h3>
+            <div class="timeline">June 2025[cite: 2]</div>
             <ul style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
-                <li>Volunteered across specialized networks to guide under-resourced students through academic foundations and vital lifestyle attributes.[cite: 1]</li>
-                <li>Designed engaging field programs to elevate target community participation.[cite: 1]</li>
-                <li>Partnered inside multifaceted peer cohorts to optimize micro-teaching strategies and group action plans.[cite: 1]</li>
+                <li>Conducted educational support sessions for underprivileged students through interactive and learner-centered activities, contributing to their academic growth[cite: 2].</li>
+                <li>Built meaningful relationships with students and their parents by providing guidance, creating awareness, and encouraging active participation in education[cite: 2].</li>
+                <li>Gained practical experience in community service by supporting students' overall development while strengthening communication, empathy, and leadership skills[cite: 2].</li>
             </ul>
         </div>
 
@@ -444,105 +463,112 @@
         <h2><i class="fa-solid fa-layer-group"></i> Core Capability Matrix</h2>
         <div class="skills-grid">
             <div class="skills-box">
-                <h3>Teaching Operations</h3>
+                <h3>Teaching Skills</h3>
                 <div class="tag-container">
-                    <span class="tag">Lesson Blueprinting[cite: 1]</span>
-                    <span class="tag">Classroom Dynamics[cite: 1]</span>
-                    <span class="tag">Formative Evaluation[cite: 1]</span>
-                    <span class="tag">Curriculum Execution[cite: 1]</span>
+                    <span class="tag">Lesson Planning[cite: 2]</span>
+                    <span class="tag">Classroom Management[cite: 2]</span>
+                    <span class="tag">Student Assessment[cite: 2]</span>
+                    <span class="tag">Curriculum Delivery[cite: 2]</span>
                 </div>
             </div>
             <div class="skills-box">
-                <h3>ICT Integration</h3>
+                <h3>ICT & Digital Skills</h3>
                 <div class="tag-container">
-                    <span class="tag">Interactive Smartboards[cite: 1]</span>
-                    <span class="tag">Projector Systems[cite: 1]</span>
-                    <span class="tag">Google Infrastructure[cite: 1]</span>
-                    <span class="tag">MS Office Ecosystem[cite: 1]</span>
+                    <span class="tag">Smart Board[cite: 2]</span>
+                    <span class="tag">Projector-Based Teaching[cite: 2]</span>
+                    <span class="tag">Digital Learning Tools[cite: 2]</span>
+                    <span class="tag">Google Suite[cite: 2]</span>
+                    <span class="tag">MS Office[cite: 2]</span>
                 </div>
             </div>
             <div class="skills-box">
-                <h3>Analytical Research</h3>
+                <h3>Research Skills</h3>
                 <div class="tag-container">
-                    <span class="tag">Educational Research[cite: 1]</span>
-                    <span class="tag">Content Engineering[cite: 1]</span>
-                    <span class="tag">Literature Analysis[cite: 1]</span>
+                    <span class="tag">Educational Research[cite: 2]</span>
+                    <span class="tag">Content Development[cite: 2]</span>
+                    <span class="tag">Literature Review[cite: 2]</span>
+                    <span class="tag">Presentation Design[cite: 2]</span>
                 </div>
             </div>
             <div class="skills-box">
-                <h3>Leadership Strengths</h3>
+                <h3>Soft Skills</h3>
                 <div class="tag-container">
-                    <span class="tag">Critical Systems Thinking[cite: 1]</span>
-                    <span class="tag">Cohort Leadership[cite: 1]</span>
-                    <span class="tag">Strategic Time Management[cite: 1]</span>
+                    <span class="tag">Critical Thinking[cite: 2]</span>
+                    <span class="tag">Communication Skills[cite: 2]</span>
+                    <span class="tag">Time Management[cite: 2]</span>
+                    <span class="tag">Team Collaboration[cite: 2]</span>
+                    <span class="tag">Leadership[cite: 2]</span>
                 </div>
             </div>
         </div>
 
-        <!-- Dual Column Split: Education & Certifications -->
+        <!-- Academic Pathway & Certifications Split -->
         <div class="flex-box">
             <div>
                 <h2><i class="fa-solid fa-graduation-cap"></i> Academic Pathway</h2>
                 <div class="card" style="margin-bottom: 1rem;">
                     <h3>Lovely Professional University</h3>
-                    <div class="timeline">2023 — Present | Punjab[cite: 1]</div>
-                    <p style="color: var(--text-secondary);">Integrated B.A. B.Ed.<br><strong style="color: var(--accent-cyan)">CGPA: 7.7</strong>[cite: 1]</p>
+                    <div class="timeline">Aug 2023 — Present | Phagwara, Punjab[cite: 2]</div>
+                    <p style="color: var(--text-secondary);">
+                        Bachelor of Arts & Education (B.A. B.Ed.)<br>
+                        <strong style="color: var(--accent-cyan)">CGPA: 7.7</strong>[cite: 2]
+                    </p>
                 </div>
                 <div class="card">
-                    <h3>Secondary Education Foundations</h3>
+                    <h3>Secondary School Foundations</h3>
                     <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.5rem;">
-                        <strong>XIIth Grade:</strong> 62% (Sanjay Kuldeep Sen. Sec. School)[cite: 1]<br>
-                        <strong>Xth Grade:</strong> 56% (Brightways International School)[cite: 1]
+                        <strong>Class XII:</strong> 62% | Sanjay Kuldeep Sen. Sec School (Sonipat, Haryana)[cite: 2]<br>
+                        <strong>Class X:</strong> 56% | Brightways International School (Sonipat, Haryana)[cite: 2]
                     </p>
                 </div>
             </div>
 
             <div>
-                <h2><i class="fa-solid fa-award"></i> Validated Certifications</h2>
+                <h2><i class="fa-solid fa-award"></i> Certifications</h2>
                 <div class="card" style="height: calc(100% - 4.5rem);">
                     <ul style="padding-top: 0.5rem;">
-                        <li style="margin-bottom: 1.2rem;"><strong>Educational Technology:</strong> Critical Understanding of Educational Technology (LPU)[cite: 1]</li>
-                        <li style="margin-bottom: 1.2rem;"><strong>Language Skills:</strong> English Language Mastery for Competitive Forums (LPU)[cite: 1]</li>
-                        <li style="margin-bottom: 1.2rem;"><strong>Specialized Tracks:</strong> Archaeology & Epigraphy Frameworks[cite: 1]</li>
-                        <li><strong>Digital Humanities:</strong> Advanced Excavation & Digital Archeological Mapping Protocols[cite: 1]</li>
+                        <li style="margin-bottom: 1.2rem;"><strong>English Language for Competitive Exams</strong> — NPTEL (Apr 2025)[cite: 2]</li>
+                        <li style="margin-bottom: 1.2rem;"><strong>Critical Understanding of Educational Technology</strong> — EDUTECH (Aug 2023)[cite: 2]</li>
+                        <li style="margin-bottom: 1.2rem;"><strong>Archaeology and Epigraphy</strong> — LPU (Apr 2024)[cite: 2]</li>
+                        <li><strong>Excavation, Cultural Heritage & Digital Archaeology</strong> — LPU (Feb 2024)[cite: 2]</li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <!-- Co-curricular field journeys & Galleries Side by Side -->
+        <!-- Co-curricular field journeys & Galleries -->
         <div class="flex-box">
             <div>
                 <h2><i class="fa-solid fa-route"></i> Immersive Field Exposure</h2>
                 <div class="card" style="height: calc(100% - 4.5rem);">
                     <ul>
-                        <li><strong>Udaan Special School:</strong> Analyzed specialized inclusion models and behavior strategies configured for unique learner domains.[cite: 1]</li>
-                        <li><strong>Pushpa Gujral Science City:</strong> Studied robotics networks, eco-energy installations, and kinetic physics displays.[cite: 1]</li>
-                        <li><strong>Jang-e-Azadi Memorial:</strong> Explored visual installations capturing the historical timeline of India's independence struggle.[cite: 1]</li>
+                        <li><strong>Udaan Special School (Mar 2025):</strong> Completed an educational field visit, observing inclusive teaching practices, classroom management strategies, and methods for supporting learners with special needs[cite: 2].</li>
+                        <li><strong>Pushpa Gujral Science City (Apr 2025):</strong> Visited to gain practical exposure to scientific concepts through interactive exhibits, robotics, renewable energy systems, and hands-on learning activities[cite: 2].</li>
+                        <li><strong>Jang-e-Azadi Memorial (May 2025):</strong> Participated in an educational visit to explore India's freedom struggle, cultural heritage, and historical exhibits[cite: 2].</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- NEW Photo Gallery Grid System -->
+            <!-- Photo Gallery Section -->
             <div>
                 <h2><i class="fa-solid fa-images"></i> Field & Photo Gallery</h2>
                 <div class="gallery-grid">
                     <div class="gallery-item">
-                        <!-- TIP: Replace with real paths when uploading images (e.g., images/field1.jpg) -->
-                        <img src="gallery1.jpg" alt="Field Study Showcase">
-                        <div class="gallery-overlay">Udaan Special School Study Visit[cite: 1]</div>
+                        <!-- Put your image in your GitHub repo as gallery1.jpg -->
+                        <img src="gallery1.jpg" alt="Field Study Visit">
+                        <div class="gallery-overlay">Udaan Special School Field Study[cite: 2]</div>
                     </div>
                     <div class="gallery-item">
-                        <img src="gallery2.jpg" alt="Science City Exhibition">
-                        <div class="gallery-overlay">Science City Interactive Analysis[cite: 1]</div>
+                        <!-- Put your image in your GitHub repo as gallery2.jpg -->
+                        <img src="gallery2.jpg" alt="Science City Visit">
+                        <div class="gallery-overlay">Science City Educational Exploration[cite: 2]</div>
                     </div>
                 </div>
                 
-                <!-- Fluent Language Tags underneath -->
+                <!-- Native Languages -->
                 <div class="tag-container" style="margin-top: 1.5rem; justify-content: center;">
-                    <span class="tag" style="background: rgba(13, 148, 136, 0.2); border-color: var(--accent-teal)">English</span>
-                    <span class="tag" style="background: rgba(13, 148, 136, 0.2); border-color: var(--accent-teal)">Hindi</span>
-                    <span class="tag" style="background: rgba(13, 148, 136, 0.2); border-color: var(--accent-teal)">Haryanvi</span>
+                    <span class="tag" style="background: rgba(13, 148, 136, 0.2); border-color: var(--accent-teal)">English[cite: 2]</span>
+                    <span class="tag" style="background: rgba(13, 148, 136, 0.2); border-color: var(--accent-teal)">Hindi[cite: 2]</span>
                 </div>
             </div>
         </div>
